@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>platformType</key>
+	<integer>2</integer>
+	<key>appName</key>
+	<string>T娱乐</string>
+	<key>isDevelop</key>
+	<false/>
+	<key>onlineClientType</key>
+	<integer>4</integer>
+	<key>platformNameId</key>
+	<integer>1</integer>
+	<key>merchantCode</key>
+	<string>TT</string>
+	<key>domain</key>
+	<string>https://zh-196yy-prod.oss-accelerate.aliyuncs.com/check.json</string>
+	<key>apiDomain</key>
+	<string>https://api.huikangheng.com</string>
+	<key>webDomain</key>
+	<string>https://h5v2.kkty1.com</string>
+</dict>
+</plist>

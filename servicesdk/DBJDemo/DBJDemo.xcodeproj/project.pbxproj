@@ -1,0 +1,1072 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		630296B529E80C9F00D4B08F /* ServiceTool.swift in Headers */ = {isa = PBXBuildFile; fileRef = B4D7A45B282E6BAE00852DEB /* ServiceTool.swift */; };
+		630296B629E80C9F00D4B08F /* JavascriptCode.swift in Headers */ = {isa = PBXBuildFile; fileRef = 83EBE619284E0A6F00F9F4DB /* JavascriptCode.swift */; };
+		630296B729E80C9F00D4B08F /* WebViewJavascriptBridge.swift in Headers */ = {isa = PBXBuildFile; fileRef = 83EBE61A284E0A6F00F9F4DB /* WebViewJavascriptBridge.swift */; };
+		630296B829E80C9F00D4B08F /* WebViewJavascriptBridgeBase.swift in Headers */ = {isa = PBXBuildFile; fileRef = 83EBE61B284E0A6F00F9F4DB /* WebViewJavascriptBridgeBase.swift */; };
+		630296B929E80C9F00D4B08F /* DBJCrypto.swift in Headers */ = {isa = PBXBuildFile; fileRef = B4545B66284B6DEB0042E092 /* DBJCrypto.swift */; };
+		630296BA29E80C9F00D4B08F /* DBJTool.swift in Headers */ = {isa = PBXBuildFile; fileRef = B4D7A4ED28335DDB00852DEB /* DBJTool.swift */; };
+		630296BB29E80C9F00D4B08F /* Keychain.swift in Headers */ = {isa = PBXBuildFile; fileRef = B4DE94EC285716D700145D6E /* Keychain.swift */; };
+		630296BC29E80C9F00D4B08F /* DBJServiceViewController.swift in Headers */ = {isa = PBXBuildFile; fileRef = B4D7A4EF28335E4500852DEB /* DBJServiceViewController.swift */; };
+		630296BD29E80C9F00D4B08F /* DBJDeviceView.swift in Headers */ = {isa = PBXBuildFile; fileRef = B4DE94EA2856FA9600145D6E /* DBJDeviceView.swift */; };
+		83EBE61C284E0A6F00F9F4DB /* JavascriptCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EBE619284E0A6F00F9F4DB /* JavascriptCode.swift */; };
+		83EBE61D284E0A6F00F9F4DB /* WebViewJavascriptBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EBE61A284E0A6F00F9F4DB /* WebViewJavascriptBridge.swift */; };
+		83EBE61E284E0A6F00F9F4DB /* WebViewJavascriptBridgeBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EBE61B284E0A6F00F9F4DB /* WebViewJavascriptBridgeBase.swift */; };
+		B42AFCD3285B474E00CF5761 /* DBJOCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B42AFCCD285B474E00CF5761 /* DBJOCKit.framework */; };
+		B42AFCD4285B474E00CF5761 /* DBJOCKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B42AFCCD285B474E00CF5761 /* DBJOCKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B42AFCDA285B483B00CF5761 /* DBJOCKitTool.h in Headers */ = {isa = PBXBuildFile; fileRef = B42AFCD8285B483B00CF5761 /* DBJOCKitTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B42AFCDC285B483B00CF5761 /* DBJOCKitTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B42AFCD9285B483B00CF5761 /* DBJOCKitTool.m */; };
+		B42AFCDF285B487200CF5761 /* DBJCryptoOC.h in Headers */ = {isa = PBXBuildFile; fileRef = B42AFCDD285B487200CF5761 /* DBJCryptoOC.h */; };
+		B42AFCE1285B487200CF5761 /* DBJCryptoOC.m in Sources */ = {isa = PBXBuildFile; fileRef = B42AFCDE285B487200CF5761 /* DBJCryptoOC.m */; };
+		B42AFCF1285B4D5200CF5761 /* DJBOCKitload@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B42AFCED285B4D5200CF5761 /* DJBOCKitload@3x.png */; };
+		B42AFCF2285B4D5200CF5761 /* DJBOCKitservice_avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B42AFCEE285B4D5200CF5761 /* DJBOCKitservice_avatar@2x.png */; };
+		B42AFCF3285B4D5200CF5761 /* DJBOCKitsound@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B42AFCEF285B4D5200CF5761 /* DJBOCKitsound@2x.png */; };
+		B42AFCF4285B4D5200CF5761 /* DJBOCKitback@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B42AFCF0285B4D5200CF5761 /* DJBOCKitback@2x.png */; };
+		B42AFCFE285B4DF800CF5761 /* WebViewJavascriptBridgeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = B42AFCF6285B4DF800CF5761 /* WebViewJavascriptBridgeBase.m */; };
+		B42AFCFF285B4DF800CF5761 /* SDJavascriptCode.h in Headers */ = {isa = PBXBuildFile; fileRef = B42AFCF7285B4DF800CF5761 /* SDJavascriptCode.h */; };
+		B42AFD00285B4DF800CF5761 /* WebViewJavascriptLeakAvoider.m in Sources */ = {isa = PBXBuildFile; fileRef = B42AFCF8285B4DF800CF5761 /* WebViewJavascriptLeakAvoider.m */; };
+		B42AFD01285B4DF800CF5761 /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B42AFCF9285B4DF800CF5761 /* WebViewJavascriptBridge.m */; };
+		B42AFD02285B4DF800CF5761 /* SDJavascriptCode.m in Sources */ = {isa = PBXBuildFile; fileRef = B42AFCFA285B4DF800CF5761 /* SDJavascriptCode.m */; };
+		B42AFD03285B4DF800CF5761 /* WebViewJavascriptBridgeBase.h in Headers */ = {isa = PBXBuildFile; fileRef = B42AFCFB285B4DF800CF5761 /* WebViewJavascriptBridgeBase.h */; };
+		B42AFD04285B4DF800CF5761 /* WebViewJavascriptBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = B42AFCFC285B4DF800CF5761 /* WebViewJavascriptBridge.h */; };
+		B42AFD05285B4DF800CF5761 /* WebViewJavascriptLeakAvoider.h in Headers */ = {isa = PBXBuildFile; fileRef = B42AFCFD285B4DF800CF5761 /* WebViewJavascriptLeakAvoider.h */; };
+		B42AFD07285B547A00CF5761 /* DBJGTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = B42AFD06285B547A00CF5761 /* DBJGTMDefines.h */; };
+		B42AFD0A285B54A300CF5761 /* DBJGTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = B42AFD08285B54A300CF5761 /* DBJGTMBase64.h */; };
+		B42AFD0B285B54A300CF5761 /* DBJGTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = B42AFD09285B54A300CF5761 /* DBJGTMBase64.m */; };
+		B42AFD0C285B585400CF5761 /* DBJOCKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B42AFCCF285B474E00CF5761 /* DBJOCKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B42AFD10285B664100CF5761 /* DBJOCServiceViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B42AFD0E285B664100CF5761 /* DBJOCServiceViewController.h */; };
+		B42AFD11285B664100CF5761 /* DBJOCServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B42AFD0F285B664100CF5761 /* DBJOCServiceViewController.m */; };
+		B42AFD14285B667200CF5761 /* DBJOCHUDProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = B42AFD12285B667200CF5761 /* DBJOCHUDProgress.h */; };
+		B42AFD15285B667200CF5761 /* DBJOCHUDProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = B42AFD13285B667200CF5761 /* DBJOCHUDProgress.m */; };
+		B42AFD18285B69E600CF5761 /* UIColor+DBJ.h in Headers */ = {isa = PBXBuildFile; fileRef = B42AFD16285B69E600CF5761 /* UIColor+DBJ.h */; };
+		B42AFD19285B69E600CF5761 /* UIColor+DBJ.m in Sources */ = {isa = PBXBuildFile; fileRef = B42AFD17285B69E600CF5761 /* UIColor+DBJ.m */; };
+		B42AFD1D285B6FBA00CF5761 /* DBJOCParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = B42AFD1B285B6FBA00CF5761 /* DBJOCParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B42AFD1E285B6FBA00CF5761 /* DBJOCParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = B42AFD1C285B6FBA00CF5761 /* DBJOCParameters.m */; };
+		B42AFD21285B7C7000CF5761 /* UIView+DBJ.h in Headers */ = {isa = PBXBuildFile; fileRef = B42AFD1F285B7C7000CF5761 /* UIView+DBJ.h */; };
+		B42AFD22285B7C7000CF5761 /* UIView+DBJ.m in Sources */ = {isa = PBXBuildFile; fileRef = B42AFD20285B7C7000CF5761 /* UIView+DBJ.m */; };
+		B42AFD25285B805600CF5761 /* DBJOCHttp.h in Headers */ = {isa = PBXBuildFile; fileRef = B42AFD23285B805600CF5761 /* DBJOCHttp.h */; };
+		B42AFD26285B805600CF5761 /* DBJOCHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = B42AFD24285B805600CF5761 /* DBJOCHttp.m */; };
+		B42AFD29285B8FC000CF5761 /* DBJOCIPInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B42AFD27285B8FC000CF5761 /* DBJOCIPInfo.m */; };
+		B42AFD2A285B8FC000CF5761 /* DBJOCIPInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B42AFD28285B8FC000CF5761 /* DBJOCIPInfo.h */; };
+		B42AFD2D285B903300CF5761 /* DBJOCUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B42AFD2B285B903300CF5761 /* DBJOCUserInfo.m */; };
+		B42AFD2E285B903300CF5761 /* DBJOCUserInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B42AFD2C285B903300CF5761 /* DBJOCUserInfo.h */; };
+		B42AFD31285BA0F000CF5761 /* DBJOCDeviceView.h in Headers */ = {isa = PBXBuildFile; fileRef = B42AFD2F285BA0F000CF5761 /* DBJOCDeviceView.h */; };
+		B42AFD32285BA0F000CF5761 /* DBJOCDeviceView.m in Sources */ = {isa = PBXBuildFile; fileRef = B42AFD30285BA0F000CF5761 /* DBJOCDeviceView.m */; };
+		B42AFD39285BB70500CF5761 /* UIDevice+DBJ.h in Headers */ = {isa = PBXBuildFile; fileRef = B42AFD37285BB70500CF5761 /* UIDevice+DBJ.h */; };
+		B42AFD3A285BB70500CF5761 /* UIDevice+DBJ.m in Sources */ = {isa = PBXBuildFile; fileRef = B42AFD38285BB70500CF5761 /* UIDevice+DBJ.m */; };
+		B42AFD3E285BB82F00CF5761 /* DBJKeyChainStore.h in Headers */ = {isa = PBXBuildFile; fileRef = B42AFD3C285BB82F00CF5761 /* DBJKeyChainStore.h */; };
+		B42AFD3F285BB82F00CF5761 /* DBJKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = B42AFD3D285BB82F00CF5761 /* DBJKeyChainStore.m */; };
+		B4545B67284B6DEB0042E092 /* DBJCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4545B66284B6DEB0042E092 /* DBJCrypto.swift */; };
+		B45F518B2849CA80008C5157 /* DJBKitload@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B45F518A2849CA80008C5157 /* DJBKitload@3x.png */; };
+		B4D7A436282E694A00852DEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D7A435282E694A00852DEB /* AppDelegate.swift */; };
+		B4D7A43A282E694A00852DEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D7A439282E694A00852DEB /* ViewController.swift */; };
+		B4D7A43D282E694A00852DEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4D7A43B282E694A00852DEB /* Main.storyboard */; };
+		B4D7A43F282E694B00852DEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4D7A43E282E694B00852DEB /* Assets.xcassets */; };
+		B4D7A442282E694B00852DEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4D7A440282E694B00852DEB /* LaunchScreen.storyboard */; };
+		B4D7A451282E6B0400852DEB /* DBJKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B4D7A450282E6B0400852DEB /* DBJKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4D7A454282E6B0400852DEB /* DBJKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4D7A44E282E6B0400852DEB /* DBJKit.framework */; };
+		B4D7A455282E6B0400852DEB /* DBJKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4D7A44E282E6B0400852DEB /* DBJKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4D7A45C282E6BAE00852DEB /* ServiceTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D7A45B282E6BAE00852DEB /* ServiceTool.swift */; };
+		B4D7A4EE28335DDB00852DEB /* DBJTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D7A4ED28335DDB00852DEB /* DBJTool.swift */; };
+		B4D7A4F028335E4500852DEB /* DBJServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D7A4EF28335E4500852DEB /* DBJServiceViewController.swift */; };
+		B4DE94ED285716D700145D6E /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DE94EC285716D700145D6E /* Keychain.swift */; };
+		B4DE94EE285720FE00145D6E /* DBJDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DE94EA2856FA9600145D6E /* DBJDeviceView.swift */; };
+		B4F62B3D2849103900A887D1 /* DJBKitsound@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F62B3A2849103900A887D1 /* DJBKitsound@2x.png */; };
+		B4F62B3E2849103900A887D1 /* DJBKitservice_avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F62B3B2849103900A887D1 /* DJBKitservice_avatar@2x.png */; };
+		B4F62B3F2849103900A887D1 /* DJBKitback@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F62B3C2849103900A887D1 /* DJBKitback@2x.png */; };
+		B4F62B412849192000A887D1 /* DJBKitback@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F62B3C2849103900A887D1 /* DJBKitback@2x.png */; };
+		B4F62B422849192200A887D1 /* DJBKitservice_avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F62B3B2849103900A887D1 /* DJBKitservice_avatar@2x.png */; };
+		B4F62B432849192400A887D1 /* DJBKitsound@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4F62B3A2849103900A887D1 /* DJBKitsound@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B42AFCD1285B474E00CF5761 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4D7A42A282E694A00852DEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B42AFCCC285B474E00CF5761;
+			remoteInfo = DBJOCKit;
+		};
+		B4D7A452282E6B0400852DEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4D7A42A282E694A00852DEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4D7A44D282E6B0400852DEB;
+			remoteInfo = DBJKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B4D7A459282E6B0400852DEB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B42AFCD4285B474E00CF5761 /* DBJOCKit.framework in Embed Frameworks */,
+				B4D7A455282E6B0400852DEB /* DBJKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4D7A4BD282E876400852DEB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		83EBE619284E0A6F00F9F4DB /* JavascriptCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JavascriptCode.swift; sourceTree = "<group>"; };
+		83EBE61A284E0A6F00F9F4DB /* WebViewJavascriptBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewJavascriptBridge.swift; sourceTree = "<group>"; };
+		83EBE61B284E0A6F00F9F4DB /* WebViewJavascriptBridgeBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewJavascriptBridgeBase.swift; sourceTree = "<group>"; };
+		B42AFCCD285B474E00CF5761 /* DBJOCKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DBJOCKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B42AFCCF285B474E00CF5761 /* DBJOCKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBJOCKit.h; sourceTree = "<group>"; };
+		B42AFCD8285B483B00CF5761 /* DBJOCKitTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBJOCKitTool.h; sourceTree = "<group>"; };
+		B42AFCD9285B483B00CF5761 /* DBJOCKitTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBJOCKitTool.m; sourceTree = "<group>"; };
+		B42AFCDD285B487200CF5761 /* DBJCryptoOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBJCryptoOC.h; sourceTree = "<group>"; };
+		B42AFCDE285B487200CF5761 /* DBJCryptoOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBJCryptoOC.m; sourceTree = "<group>"; };
+		B42AFCE2285B48F400CF5761 /* DBJDemo-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DBJDemo-Swift.h"; sourceTree = "<group>"; };
+		B42AFCED285B4D5200CF5761 /* DJBOCKitload@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DJBOCKitload@3x.png"; sourceTree = "<group>"; };
+		B42AFCEE285B4D5200CF5761 /* DJBOCKitservice_avatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DJBOCKitservice_avatar@2x.png"; sourceTree = "<group>"; };
+		B42AFCEF285B4D5200CF5761 /* DJBOCKitsound@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DJBOCKitsound@2x.png"; sourceTree = "<group>"; };
+		B42AFCF0285B4D5200CF5761 /* DJBOCKitback@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DJBOCKitback@2x.png"; sourceTree = "<group>"; };
+		B42AFCF6285B4DF800CF5761 /* WebViewJavascriptBridgeBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridgeBase.m; sourceTree = "<group>"; };
+		B42AFCF7285B4DF800CF5761 /* SDJavascriptCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDJavascriptCode.h; sourceTree = "<group>"; };
+		B42AFCF8285B4DF800CF5761 /* WebViewJavascriptLeakAvoider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptLeakAvoider.m; sourceTree = "<group>"; };
+		B42AFCF9285B4DF800CF5761 /* WebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		B42AFCFA285B4DF800CF5761 /* SDJavascriptCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDJavascriptCode.m; sourceTree = "<group>"; };
+		B42AFCFB285B4DF800CF5761 /* WebViewJavascriptBridgeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridgeBase.h; sourceTree = "<group>"; };
+		B42AFCFC285B4DF800CF5761 /* WebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		B42AFCFD285B4DF800CF5761 /* WebViewJavascriptLeakAvoider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptLeakAvoider.h; sourceTree = "<group>"; };
+		B42AFD06285B547A00CF5761 /* DBJGTMDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBJGTMDefines.h; sourceTree = "<group>"; };
+		B42AFD08285B54A300CF5761 /* DBJGTMBase64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBJGTMBase64.h; sourceTree = "<group>"; };
+		B42AFD09285B54A300CF5761 /* DBJGTMBase64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBJGTMBase64.m; sourceTree = "<group>"; };
+		B42AFD0E285B664100CF5761 /* DBJOCServiceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBJOCServiceViewController.h; sourceTree = "<group>"; };
+		B42AFD0F285B664100CF5761 /* DBJOCServiceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBJOCServiceViewController.m; sourceTree = "<group>"; };
+		B42AFD12285B667200CF5761 /* DBJOCHUDProgress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBJOCHUDProgress.h; sourceTree = "<group>"; };
+		B42AFD13285B667200CF5761 /* DBJOCHUDProgress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBJOCHUDProgress.m; sourceTree = "<group>"; };
+		B42AFD16285B69E600CF5761 /* UIColor+DBJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DBJ.h"; sourceTree = "<group>"; };
+		B42AFD17285B69E600CF5761 /* UIColor+DBJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DBJ.m"; sourceTree = "<group>"; };
+		B42AFD1B285B6FBA00CF5761 /* DBJOCParameters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBJOCParameters.h; sourceTree = "<group>"; };
+		B42AFD1C285B6FBA00CF5761 /* DBJOCParameters.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBJOCParameters.m; sourceTree = "<group>"; };
+		B42AFD1F285B7C7000CF5761 /* UIView+DBJ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+DBJ.h"; sourceTree = "<group>"; };
+		B42AFD20285B7C7000CF5761 /* UIView+DBJ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+DBJ.m"; sourceTree = "<group>"; };
+		B42AFD23285B805600CF5761 /* DBJOCHttp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBJOCHttp.h; sourceTree = "<group>"; };
+		B42AFD24285B805600CF5761 /* DBJOCHttp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBJOCHttp.m; sourceTree = "<group>"; };
+		B42AFD27285B8FC000CF5761 /* DBJOCIPInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBJOCIPInfo.m; sourceTree = "<group>"; };
+		B42AFD28285B8FC000CF5761 /* DBJOCIPInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBJOCIPInfo.h; sourceTree = "<group>"; };
+		B42AFD2B285B903300CF5761 /* DBJOCUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBJOCUserInfo.m; sourceTree = "<group>"; };
+		B42AFD2C285B903300CF5761 /* DBJOCUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBJOCUserInfo.h; sourceTree = "<group>"; };
+		B42AFD2F285BA0F000CF5761 /* DBJOCDeviceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBJOCDeviceView.h; sourceTree = "<group>"; };
+		B42AFD30285BA0F000CF5761 /* DBJOCDeviceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBJOCDeviceView.m; sourceTree = "<group>"; };
+		B42AFD37285BB70500CF5761 /* UIDevice+DBJ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+DBJ.h"; sourceTree = "<group>"; };
+		B42AFD38285BB70500CF5761 /* UIDevice+DBJ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+DBJ.m"; sourceTree = "<group>"; };
+		B42AFD3C285BB82F00CF5761 /* DBJKeyChainStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBJKeyChainStore.h; sourceTree = "<group>"; };
+		B42AFD3D285BB82F00CF5761 /* DBJKeyChainStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBJKeyChainStore.m; sourceTree = "<group>"; };
+		B4545B66284B6DEB0042E092 /* DBJCrypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBJCrypto.swift; sourceTree = "<group>"; };
+		B45F518A2849CA80008C5157 /* DJBKitload@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DJBKitload@3x.png"; sourceTree = "<group>"; };
+		B4D7A432282E694A00852DEB /* DBJDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBJDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4D7A435282E694A00852DEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B4D7A439282E694A00852DEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B4D7A43C282E694A00852DEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B4D7A43E282E694B00852DEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B4D7A441282E694B00852DEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B4D7A443282E694B00852DEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4D7A44E282E6B0400852DEB /* DBJKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DBJKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4D7A450282E6B0400852DEB /* DBJKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBJKit.h; sourceTree = "<group>"; };
+		B4D7A45B282E6BAE00852DEB /* ServiceTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTool.swift; sourceTree = "<group>"; };
+		B4D7A4ED28335DDB00852DEB /* DBJTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBJTool.swift; sourceTree = "<group>"; };
+		B4D7A4EF28335E4500852DEB /* DBJServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBJServiceViewController.swift; sourceTree = "<group>"; };
+		B4DE94EA2856FA9600145D6E /* DBJDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBJDeviceView.swift; sourceTree = "<group>"; };
+		B4DE94EC285716D700145D6E /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		B4F62B3A2849103900A887D1 /* DJBKitsound@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DJBKitsound@2x.png"; sourceTree = "<group>"; };
+		B4F62B3B2849103900A887D1 /* DJBKitservice_avatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DJBKitservice_avatar@2x.png"; sourceTree = "<group>"; };
+		B4F62B3C2849103900A887D1 /* DJBKitback@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DJBKitback@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B42AFCCA285B474E00CF5761 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4D7A42F282E694A00852DEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B42AFCD3285B474E00CF5761 /* DBJOCKit.framework in Frameworks */,
+				B4D7A454282E6B0400852DEB /* DBJKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4D7A44B282E6B0400852DEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B42AFCC7285B472100CF5761 /* DBJKitOC */ = {
+			isa = PBXGroup;
+			children = (
+				B42AFD3B285BB82F00CF5761 /* DBJCKeyChainStore */,
+				B42AFD1A285B6A3200CF5761 /* Libs */,
+				B42AFCF5285B4DF800CF5761 /* SDBridgeOC */,
+				B42AFCEC285B4D5200CF5761 /* OCResource */,
+				B42AFCD8285B483B00CF5761 /* DBJOCKitTool.h */,
+				B42AFCD9285B483B00CF5761 /* DBJOCKitTool.m */,
+				B42AFD1B285B6FBA00CF5761 /* DBJOCParameters.h */,
+				B42AFD1C285B6FBA00CF5761 /* DBJOCParameters.m */,
+				B42AFD0E285B664100CF5761 /* DBJOCServiceViewController.h */,
+				B42AFD0F285B664100CF5761 /* DBJOCServiceViewController.m */,
+				B42AFD12285B667200CF5761 /* DBJOCHUDProgress.h */,
+				B42AFD13285B667200CF5761 /* DBJOCHUDProgress.m */,
+				B42AFD2C285B903300CF5761 /* DBJOCUserInfo.h */,
+				B42AFD2B285B903300CF5761 /* DBJOCUserInfo.m */,
+				B42AFD23285B805600CF5761 /* DBJOCHttp.h */,
+				B42AFD24285B805600CF5761 /* DBJOCHttp.m */,
+				B42AFD28285B8FC000CF5761 /* DBJOCIPInfo.h */,
+				B42AFD27285B8FC000CF5761 /* DBJOCIPInfo.m */,
+				B42AFD2F285BA0F000CF5761 /* DBJOCDeviceView.h */,
+				B42AFD30285BA0F000CF5761 /* DBJOCDeviceView.m */,
+				B42AFD37285BB70500CF5761 /* UIDevice+DBJ.h */,
+				B42AFD38285BB70500CF5761 /* UIDevice+DBJ.m */,
+			);
+			path = DBJKitOC;
+			sourceTree = "<group>";
+		};
+		B42AFCCE285B474E00CF5761 /* DBJOCKit */ = {
+			isa = PBXGroup;
+			children = (
+				B42AFCCF285B474E00CF5761 /* DBJOCKit.h */,
+			);
+			path = DBJOCKit;
+			sourceTree = "<group>";
+		};
+		B42AFCEC285B4D5200CF5761 /* OCResource */ = {
+			isa = PBXGroup;
+			children = (
+				B42AFCED285B4D5200CF5761 /* DJBOCKitload@3x.png */,
+				B42AFCEE285B4D5200CF5761 /* DJBOCKitservice_avatar@2x.png */,
+				B42AFCEF285B4D5200CF5761 /* DJBOCKitsound@2x.png */,
+				B42AFCF0285B4D5200CF5761 /* DJBOCKitback@2x.png */,
+			);
+			path = OCResource;
+			sourceTree = "<group>";
+		};
+		B42AFCF5285B4DF800CF5761 /* SDBridgeOC */ = {
+			isa = PBXGroup;
+			children = (
+				B42AFCFB285B4DF800CF5761 /* WebViewJavascriptBridgeBase.h */,
+				B42AFCF6285B4DF800CF5761 /* WebViewJavascriptBridgeBase.m */,
+				B42AFCFD285B4DF800CF5761 /* WebViewJavascriptLeakAvoider.h */,
+				B42AFCF8285B4DF800CF5761 /* WebViewJavascriptLeakAvoider.m */,
+				B42AFCF7285B4DF800CF5761 /* SDJavascriptCode.h */,
+				B42AFCFA285B4DF800CF5761 /* SDJavascriptCode.m */,
+				B42AFCFC285B4DF800CF5761 /* WebViewJavascriptBridge.h */,
+				B42AFCF9285B4DF800CF5761 /* WebViewJavascriptBridge.m */,
+			);
+			path = SDBridgeOC;
+			sourceTree = "<group>";
+		};
+		B42AFD1A285B6A3200CF5761 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				B42AFD16285B69E600CF5761 /* UIColor+DBJ.h */,
+				B42AFD17285B69E600CF5761 /* UIColor+DBJ.m */,
+				B42AFCDD285B487200CF5761 /* DBJCryptoOC.h */,
+				B42AFCDE285B487200CF5761 /* DBJCryptoOC.m */,
+				B42AFD06285B547A00CF5761 /* DBJGTMDefines.h */,
+				B42AFD08285B54A300CF5761 /* DBJGTMBase64.h */,
+				B42AFD09285B54A300CF5761 /* DBJGTMBase64.m */,
+				B42AFD1F285B7C7000CF5761 /* UIView+DBJ.h */,
+				B42AFD20285B7C7000CF5761 /* UIView+DBJ.m */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		B42AFD3B285BB82F00CF5761 /* DBJCKeyChainStore */ = {
+			isa = PBXGroup;
+			children = (
+				B42AFD3C285BB82F00CF5761 /* DBJKeyChainStore.h */,
+				B42AFD3D285BB82F00CF5761 /* DBJKeyChainStore.m */,
+			);
+			path = DBJCKeyChainStore;
+			sourceTree = "<group>";
+		};
+		B45F5197284A4A99008C5157 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4D7A429282E694A00852DEB = {
+			isa = PBXGroup;
+			children = (
+				B42AFCC7285B472100CF5761 /* DBJKitOC */,
+				B4D7A434282E694A00852DEB /* DBJDemo */,
+				B4D7A44F282E6B0400852DEB /* DBJKit */,
+				B42AFCCE285B474E00CF5761 /* DBJOCKit */,
+				B4D7A433282E694A00852DEB /* Products */,
+				B45F5197284A4A99008C5157 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B4D7A433282E694A00852DEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4D7A432282E694A00852DEB /* DBJDemo.app */,
+				B4D7A44E282E6B0400852DEB /* DBJKit.framework */,
+				B42AFCCD285B474E00CF5761 /* DBJOCKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4D7A434282E694A00852DEB /* DBJDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B4D7A45A282E6B9300852DEB /* class */,
+				B4D7A435282E694A00852DEB /* AppDelegate.swift */,
+				B4D7A439282E694A00852DEB /* ViewController.swift */,
+				B4D7A43B282E694A00852DEB /* Main.storyboard */,
+				B4D7A43E282E694B00852DEB /* Assets.xcassets */,
+				B4D7A440282E694B00852DEB /* LaunchScreen.storyboard */,
+				B42AFCE2285B48F400CF5761 /* DBJDemo-Swift.h */,
+				B4D7A443282E694B00852DEB /* Info.plist */,
+			);
+			path = DBJDemo;
+			sourceTree = "<group>";
+		};
+		B4D7A44F282E6B0400852DEB /* DBJKit */ = {
+			isa = PBXGroup;
+			children = (
+				B4D7A450282E6B0400852DEB /* DBJKit.h */,
+			);
+			path = DBJKit;
+			sourceTree = "<group>";
+		};
+		B4D7A45A282E6B9300852DEB /* class */ = {
+			isa = PBXGroup;
+			children = (
+				B4F62B402849103E00A887D1 /* Resource */,
+				B4D7A45B282E6BAE00852DEB /* ServiceTool.swift */,
+				83EBE619284E0A6F00F9F4DB /* JavascriptCode.swift */,
+				83EBE61A284E0A6F00F9F4DB /* WebViewJavascriptBridge.swift */,
+				83EBE61B284E0A6F00F9F4DB /* WebViewJavascriptBridgeBase.swift */,
+				B4545B66284B6DEB0042E092 /* DBJCrypto.swift */,
+				B4D7A4ED28335DDB00852DEB /* DBJTool.swift */,
+				B4DE94EC285716D700145D6E /* Keychain.swift */,
+				B4D7A4EF28335E4500852DEB /* DBJServiceViewController.swift */,
+				B4DE94EA2856FA9600145D6E /* DBJDeviceView.swift */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
+		B4F62B402849103E00A887D1 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B45F518A2849CA80008C5157 /* DJBKitload@3x.png */,
+				B4F62B3C2849103900A887D1 /* DJBKitback@2x.png */,
+				B4F62B3B2849103900A887D1 /* DJBKitservice_avatar@2x.png */,
+				B4F62B3A2849103900A887D1 /* DJBKitsound@2x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B42AFCC8285B474E00CF5761 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B42AFCDF285B487200CF5761 /* DBJCryptoOC.h in Headers */,
+				B42AFCDA285B483B00CF5761 /* DBJOCKitTool.h in Headers */,
+				B42AFCFF285B4DF800CF5761 /* SDJavascriptCode.h in Headers */,
+				B42AFD25285B805600CF5761 /* DBJOCHttp.h in Headers */,
+				B42AFD18285B69E600CF5761 /* UIColor+DBJ.h in Headers */,
+				B42AFD39285BB70500CF5761 /* UIDevice+DBJ.h in Headers */,
+				B42AFD1D285B6FBA00CF5761 /* DBJOCParameters.h in Headers */,
+				B42AFD07285B547A00CF5761 /* DBJGTMDefines.h in Headers */,
+				B42AFD0A285B54A300CF5761 /* DBJGTMBase64.h in Headers */,
+				B42AFD3E285BB82F00CF5761 /* DBJKeyChainStore.h in Headers */,
+				B42AFD14285B667200CF5761 /* DBJOCHUDProgress.h in Headers */,
+				B42AFD21285B7C7000CF5761 /* UIView+DBJ.h in Headers */,
+				B42AFD2A285B8FC000CF5761 /* DBJOCIPInfo.h in Headers */,
+				B42AFD04285B4DF800CF5761 /* WebViewJavascriptBridge.h in Headers */,
+				B42AFD31285BA0F000CF5761 /* DBJOCDeviceView.h in Headers */,
+				B42AFD10285B664100CF5761 /* DBJOCServiceViewController.h in Headers */,
+				B42AFD03285B4DF800CF5761 /* WebViewJavascriptBridgeBase.h in Headers */,
+				B42AFD05285B4DF800CF5761 /* WebViewJavascriptLeakAvoider.h in Headers */,
+				B42AFD2E285B903300CF5761 /* DBJOCUserInfo.h in Headers */,
+				B42AFD0C285B585400CF5761 /* DBJOCKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4D7A449282E6B0400852DEB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4D7A451282E6B0400852DEB /* DBJKit.h in Headers */,
+				630296B529E80C9F00D4B08F /* ServiceTool.swift in Headers */,
+				630296B629E80C9F00D4B08F /* JavascriptCode.swift in Headers */,
+				630296B729E80C9F00D4B08F /* WebViewJavascriptBridge.swift in Headers */,
+				630296B829E80C9F00D4B08F /* WebViewJavascriptBridgeBase.swift in Headers */,
+				630296B929E80C9F00D4B08F /* DBJCrypto.swift in Headers */,
+				630296BA29E80C9F00D4B08F /* DBJTool.swift in Headers */,
+				630296BB29E80C9F00D4B08F /* Keychain.swift in Headers */,
+				630296BC29E80C9F00D4B08F /* DBJServiceViewController.swift in Headers */,
+				630296BD29E80C9F00D4B08F /* DBJDeviceView.swift in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B42AFCCC285B474E00CF5761 /* DBJOCKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B42AFCD5285B474E00CF5761 /* Build configuration list for PBXNativeTarget "DBJOCKit" */;
+			buildPhases = (
+				B42AFCC8285B474E00CF5761 /* Headers */,
+				B42AFCC9285B474E00CF5761 /* Sources */,
+				B42AFCCA285B474E00CF5761 /* Frameworks */,
+				B42AFCCB285B474E00CF5761 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DBJOCKit;
+			productName = DBJOCKit;
+			productReference = B42AFCCD285B474E00CF5761 /* DBJOCKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B4D7A431282E694A00852DEB /* DBJDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4D7A446282E694B00852DEB /* Build configuration list for PBXNativeTarget "DBJDemo" */;
+			buildPhases = (
+				B4D7A42E282E694A00852DEB /* Sources */,
+				B4D7A42F282E694A00852DEB /* Frameworks */,
+				B4D7A430282E694A00852DEB /* Resources */,
+				B4D7A459282E6B0400852DEB /* Embed Frameworks */,
+				B4D7A4BD282E876400852DEB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4D7A453282E6B0400852DEB /* PBXTargetDependency */,
+				B42AFCD2285B474E00CF5761 /* PBXTargetDependency */,
+			);
+			name = DBJDemo;
+			productName = DBJDemo;
+			productReference = B4D7A432282E694A00852DEB /* DBJDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B4D7A44D282E6B0400852DEB /* DBJKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4D7A456282E6B0400852DEB /* Build configuration list for PBXNativeTarget "DBJKit" */;
+			buildPhases = (
+				B4D7A449282E6B0400852DEB /* Headers */,
+				B4D7A44A282E6B0400852DEB /* Sources */,
+				B4D7A44B282E6B0400852DEB /* Frameworks */,
+				B4D7A44C282E6B0400852DEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DBJKit;
+			productName = DBJKit;
+			productReference = B4D7A44E282E6B0400852DEB /* DBJKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B4D7A42A282E694A00852DEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					B42AFCCC285B474E00CF5761 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					B4D7A431282E694A00852DEB = {
+						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1340;
+					};
+					B4D7A44D282E6B0400852DEB = {
+						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
+					};
+				};
+			};
+			buildConfigurationList = B4D7A42D282E694A00852DEB /* Build configuration list for PBXProject "DBJDemo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B4D7A429282E694A00852DEB;
+			productRefGroup = B4D7A433282E694A00852DEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4D7A431282E694A00852DEB /* DBJDemo */,
+				B4D7A44D282E6B0400852DEB /* DBJKit */,
+				B42AFCCC285B474E00CF5761 /* DBJOCKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B42AFCCB285B474E00CF5761 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B42AFCF1285B4D5200CF5761 /* DJBOCKitload@3x.png in Resources */,
+				B42AFCF3285B4D5200CF5761 /* DJBOCKitsound@2x.png in Resources */,
+				B42AFCF2285B4D5200CF5761 /* DJBOCKitservice_avatar@2x.png in Resources */,
+				B42AFCF4285B4D5200CF5761 /* DJBOCKitback@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4D7A430282E694A00852DEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4D7A442282E694B00852DEB /* LaunchScreen.storyboard in Resources */,
+				B4F62B422849192200A887D1 /* DJBKitservice_avatar@2x.png in Resources */,
+				B4F62B432849192400A887D1 /* DJBKitsound@2x.png in Resources */,
+				B4F62B412849192000A887D1 /* DJBKitback@2x.png in Resources */,
+				B4D7A43F282E694B00852DEB /* Assets.xcassets in Resources */,
+				B4D7A43D282E694A00852DEB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4D7A44C282E6B0400852DEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4F62B3E2849103900A887D1 /* DJBKitservice_avatar@2x.png in Resources */,
+				B4F62B3D2849103900A887D1 /* DJBKitsound@2x.png in Resources */,
+				B4F62B3F2849103900A887D1 /* DJBKitback@2x.png in Resources */,
+				B45F518B2849CA80008C5157 /* DJBKitload@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B42AFCC9285B474E00CF5761 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B42AFD19285B69E600CF5761 /* UIColor+DBJ.m in Sources */,
+				B42AFD29285B8FC000CF5761 /* DBJOCIPInfo.m in Sources */,
+				B42AFD02285B4DF800CF5761 /* SDJavascriptCode.m in Sources */,
+				B42AFD11285B664100CF5761 /* DBJOCServiceViewController.m in Sources */,
+				B42AFD2D285B903300CF5761 /* DBJOCUserInfo.m in Sources */,
+				B42AFD15285B667200CF5761 /* DBJOCHUDProgress.m in Sources */,
+				B42AFD3F285BB82F00CF5761 /* DBJKeyChainStore.m in Sources */,
+				B42AFD00285B4DF800CF5761 /* WebViewJavascriptLeakAvoider.m in Sources */,
+				B42AFCDC285B483B00CF5761 /* DBJOCKitTool.m in Sources */,
+				B42AFCFE285B4DF800CF5761 /* WebViewJavascriptBridgeBase.m in Sources */,
+				B42AFD32285BA0F000CF5761 /* DBJOCDeviceView.m in Sources */,
+				B42AFD0B285B54A300CF5761 /* DBJGTMBase64.m in Sources */,
+				B42AFD1E285B6FBA00CF5761 /* DBJOCParameters.m in Sources */,
+				B42AFCE1285B487200CF5761 /* DBJCryptoOC.m in Sources */,
+				B42AFD01285B4DF800CF5761 /* WebViewJavascriptBridge.m in Sources */,
+				B42AFD22285B7C7000CF5761 /* UIView+DBJ.m in Sources */,
+				B42AFD3A285BB70500CF5761 /* UIDevice+DBJ.m in Sources */,
+				B42AFD26285B805600CF5761 /* DBJOCHttp.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4D7A42E282E694A00852DEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4D7A43A282E694A00852DEB /* ViewController.swift in Sources */,
+				B4D7A436282E694A00852DEB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4D7A44A282E6B0400852DEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4D7A4F028335E4500852DEB /* DBJServiceViewController.swift in Sources */,
+				83EBE61C284E0A6F00F9F4DB /* JavascriptCode.swift in Sources */,
+				B4D7A45C282E6BAE00852DEB /* ServiceTool.swift in Sources */,
+				83EBE61D284E0A6F00F9F4DB /* WebViewJavascriptBridge.swift in Sources */,
+				B4D7A4EE28335DDB00852DEB /* DBJTool.swift in Sources */,
+				B4DE94ED285716D700145D6E /* Keychain.swift in Sources */,
+				B4DE94EE285720FE00145D6E /* DBJDeviceView.swift in Sources */,
+				83EBE61E284E0A6F00F9F4DB /* WebViewJavascriptBridgeBase.swift in Sources */,
+				B4545B67284B6DEB0042E092 /* DBJCrypto.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B42AFCD2285B474E00CF5761 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B42AFCCC285B474E00CF5761 /* DBJOCKit */;
+			targetProxy = B42AFCD1285B474E00CF5761 /* PBXContainerItemProxy */;
+		};
+		B4D7A453282E6B0400852DEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4D7A44D282E6B0400852DEB /* DBJKit */;
+			targetProxy = B4D7A452282E6B0400852DEB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B4D7A43B282E694A00852DEB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4D7A43C282E694A00852DEB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B4D7A440282E694B00852DEB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4D7A441282E694B00852DEB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B42AFCD6285B474E00CF5761 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_dylib;
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DBJOCKit.www;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B42AFCD7285B474E00CF5761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_dylib;
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crypto.dbj.test.www.DBJOCKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B4D7A444282E694B00852DEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B4D7A445282E694B00852DEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B4D7A447282E694B00852DEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DYMVPT33VY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DBJDemo/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "“使用麦克风”";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "相册权限";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_CODE_SIGN_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crypto.www.DBJDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B4D7A448282E694B00852DEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DYMVPT33VY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DBJDemo/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "“使用麦克风”";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "相册权限";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_CODE_SIGN_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crypto.www.DBJDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B4D7A457282E6B0400852DEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EXCLUDED_ARCHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DBJDemo/class",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_dylib;
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CODE_SIGN_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=*]" = com.DBJKit.www;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = NO;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B4D7A458282E6B0400852DEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EXCLUDED_ARCHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DBJDemo/class",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_dylib;
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CODE_SIGN_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crypto.dbj.test.www.DBJKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = NO;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B42AFCD5285B474E00CF5761 /* Build configuration list for PBXNativeTarget "DBJOCKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B42AFCD6285B474E00CF5761 /* Debug */,
+				B42AFCD7285B474E00CF5761 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4D7A42D282E694A00852DEB /* Build configuration list for PBXProject "DBJDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4D7A444282E694B00852DEB /* Debug */,
+				B4D7A445282E694B00852DEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4D7A446282E694B00852DEB /* Build configuration list for PBXNativeTarget "DBJDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4D7A447282E694B00852DEB /* Debug */,
+				B4D7A448282E694B00852DEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4D7A456282E6B0400852DEB /* Build configuration list for PBXNativeTarget "DBJKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4D7A457282E6B0400852DEB /* Debug */,
+				B4D7A458282E6B0400852DEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B4D7A42A282E694A00852DEB /* Project object */;
+}

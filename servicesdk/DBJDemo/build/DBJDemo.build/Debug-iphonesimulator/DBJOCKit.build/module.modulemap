@@ -1,0 +1,6 @@
+framework module DBJOCKit {
+  umbrella header "DBJOCKit.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,21 @@
+{
+    "info": {
+        "appName": "196",
+        "LaunchName": "Launch196",
+        "iconName": "AppIcon",
+        "iconFileName": "AppIcon196Sport"
+    },
+    "product": {
+        "appName": "196",
+        "isDevelop": false,
+        "apiDomain": "https://www.baidu.com",
+        "webDomain": "https://www.google.com",
+        "domain": "https://www.qq.com"
+    },
+    "google": {
+        "google_app_id": "1",
+        "client_id": "1",
+        "apikey": "1",
+        "appname": "1"
+    }
+}

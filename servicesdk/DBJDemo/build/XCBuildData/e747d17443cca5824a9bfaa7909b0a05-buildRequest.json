@@ -1,0 +1,46 @@
+{
+  "_buildCommand2" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildAndRun"
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "a6aa729731d91b0619023f3f504f4a7c9cf4f62ad921228a72000c857aa8f678"
+    }
+  ],
+  "containerPath" : "/Users/funny/work/DBJDemo/DBJDemo.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "configurationName" : "Debug",
+    "overrides" : {
+      "commandLine" : {
+        "table" : {
+          "BUILD_DIR" : "/Users/funny/Library/Developer/Xcode/DerivedData/DBJDemo-hksevngojepblagnfwbxnezgtujc/Build/Products",
+          "BUILD_ROOT" : "/Users/funny/Library/Developer/Xcode/DerivedData/DBJDemo-hksevngojepblagnfwbxnezgtujc/Build/Products",
+          "ONLY_ACTIVE_ARCH" : "NO",
+          "SDKROOT" : "iphonesimulator15.5",
+          "TOOLCHAINS" : "com.apple.dt.toolchain.XcodeDefault"
+        }
+      },
+      "synthesized" : {
+        "table" : {
+          "ACTION" : "build",
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      },
+      "toolchainOverride" : "com.apple.dt.toolchain.XcodeDefault"
+    }
+  },
+  "schemeCommand" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : false,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

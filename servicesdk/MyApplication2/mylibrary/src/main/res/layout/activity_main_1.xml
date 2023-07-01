@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_gradient"
+    android:fitsSystemWindows="true"
+    >
+
+    <RelativeLayout   android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/background_gradient"
+        >
+        <ImageView
+            android:id="@+id/avatart"
+            android:layout_centerVertical="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/service_avatar">
+        </ImageView>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@id/avatart"
+            android:layout_centerVertical="true"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="20dp"
+            android:autoSizeMaxTextSize="50dp"
+            android:autoSizeStepGranularity="2sp"
+            ></TextView>
+        <TextView
+            android:id="@+id/deviceInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设备信息"
+            android:layout_centerVertical="true"
+            android:onClick="onGetDeviceInfo"
+            android:clickable="true"
+            android:layout_marginRight = "10dp"
+            android:layout_toLeftOf="@id/line"
+            android:textColor="@color/white"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/bacKBtn"
+            android:textColor="@color/white"
+            >
+        </TextView>
+<!--        <ImageView-->
+<!--            android:id="@+id/soundBtn"-->
+<!--            android:layout_width="16dp"-->
+<!--            android:layout_height="16dp"-->
+<!--            android:src="@drawable/sound"-->
+<!--            android:layout_toLeftOf="@id/bacKBtn"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginRight="15dp"-->
+<!--            android:onClick="onSound"-->
+<!--            android:clickable="true"-->
+<!--            >-->
+<!--        </ImageView>-->
+        <ImageView
+            android:id="@+id/bacKBtn"
+            android:scaleType="centerInside"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/back"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight = "15dp"
+            android:onClick="onBackAPP"
+            android:clickable="true"
+            ></ImageView>
+    </RelativeLayout>
+
+<!--    <ProgressBar-->
+<!--        android:id="@+id/progress_bar"-->
+<!--        style="@android:style/Widget.ProgressBar.Horizontal"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="5dp"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_marginRight="0dp"-->
+<!--        android:layout_below="@id/my_toolbar"-->
+<!--        android:max="100"-->
+<!--        android:progress="0"-->
+<!--        android:progressDrawable="@drawable/shape_webview_h5_progress_bar" />-->
+    <com.example.mylibrary.RadiusCutLayout
+        android:id="@+id/radius"
+        android:background="@color/white"
+        app:clip_background="true"
+        app:round_corner_top_left="10dp"
+        app:round_corner_top_right="10dp"
+        android:layout_below="@+id/my_toolbar"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </com.example.mylibrary.RadiusCutLayout>
+    <com.example.mylibrary.LoadingView
+        android:id="@+id/loadingView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+
+
+</RelativeLayout>

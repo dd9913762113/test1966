@@ -1,0 +1,25 @@
+{
+    "appName": "TT",
+    "launchName": "LaunchT",
+    "iconName": {
+        "CFBundlePrimaryIcon": {
+            "CFBundleIconFiles": [
+                "AppIconSportT60x60"
+            ],
+            "CFBundleIconName": "AppIconSportT"
+        }
+    },
+    
+    "iconPad": {
+        
+        "CFBundlePrimaryIcon": {
+            "CFBundleIconFiles": [
+                "AppIconSportT60x60",
+                "AppIconSportT76x76"
+            ],
+            "CFBundleIconName": "AppIconSportT"
+        }
+        
+        
+    }
+}
