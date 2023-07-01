@@ -1,0 +1,61 @@
+name: authenticator
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: {sdk: '>=2.18.6 <3.0.0'}
+dependencies:
+  cupertino_icons: ^1.0.2
+  get: 4.6.5
+  image_picker: ^0.8.6
+  url_launcher: ^6.1.7
+  permission_handler: ^10.2.0
+  shared_preferences: ^2.0.17
+  crypto: ^3.0.2
+  adaptive_dialog: ^1.8.0+1
+  flutter_speed_dial: ^6.2.0
+#  log输出
+  simple_logger: ^1.9.0+2
+#  二维码识别
+  recognition_qrcode: ^1.0.2
+#  Google验证器 解码
+#  otpauth_migration: ^0.0.7
+  protobuf: ^2.1.0
+  fixnum: ^1.0.1
+#  icon生成器
+#  flutter_launcher_icons: ^0.11.0
+  jpush_flutter: ^2.4.1
+
+  mobile_scanner:
+    git: {url: 'https://github.com/juliansteenbakker/mobile_scanner.git'}
+  flutter: {sdk: flutter}
+
+dev_dependencies:
+  flutter_lints: 2.0.1
+  flutter_test: {sdk: flutter}
+flutter:
+  uses-material-design: true
+  assets: []
+  fonts: []
+
+#flutter_icons:
+#    #  image_path: "assets/images/icon-128x128.png"
+#    image_path_android: "assets/images/icons/icon-1024x1024.png"
+#    image_path_ios: "assets/images/icons/icon-1024x1024.png"
+#    android: true # can specify file name here e.g. "ic_launcher"
+#    ios: true # can specify file name here e.g. "My-Launcher-Icon"
+#    adaptive_icon_background: "assets/images/icons/icon-1024x1024.png" # only available for Android 8.0 devices and above
+#    adaptive_icon_foreground: "assets/images/icons/icon-1024x1024.png" # only available for Android 8.0 devices and above
+#    min_sdk_android: 22 # android min sdk min:16, default 21
+#    remove_alpha_ios: true
+#    web:
+#      generate: true
+#      image_path: "assets/images/icons/icon-1024x1024.png"
+#      background_color: "#hexcode"
+#      theme_color: "#hexcode"
+#    windows:
+#      generate: true
+#      image_path: "assets/images/icons/icon-1024x1024.png"
+#      icon_size: 48 # min:48, max:256, default: 48
+#    macos:
+#      generate: true
+#      image_path: "assets/images/icons/icon-1024x1024.png"
